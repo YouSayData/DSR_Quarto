@@ -1,37 +1,36 @@
 ---
-title: "What is RMarkdown"
+title: "What is Quarto"
 author: "Thomas Koentges"
 date: 03/22/2024
-output:
-  html_document:
+execute:
+  echo: true
+format:
+  html:
     df_print: paged
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+## Quarto
 
-## R Markdown
+Quarto is a modernisation of RMarkdown. It is a separate tool, but it offers more convenience. It also integrates several programming languages (R, Python, Julia). Quarto files are designed to be used in three ways:
 
-R Markdown is a tool for integrating prose, code, and results for authoring HTML, PDF, and MS Word documents. R Markdown files are designed to be used in three ways:
-
-1. For communicating to decision makers.
-2. For collaborating with other data scientists (including future you!).
-3. As a modern day lab notebook where you can capture not only what you did, but also what you were thinking.
+1.  For communicating to decision makers.
+2.  For collaborating with other data scientists (including future you!).
+3.  As a modern day lab notebook where you can capture not only what you did, but also what you were thinking.
 
 ### How it works
 
 It contains three important types of content:
 
-- (optional) YAML header
-- chunks of R code
-- text mixed with simple text formatting
+-   (optional) YAML header
+-   chunks of R / Python / Julia code
+-   text mixed with simple text formatting
 
 ![RMarkdown Workflow](https://d33wubrfki0l68.cloudfront.net/61d189fd9cdf955058415d3e1b28dd60e1bd7c9b/9791d/images/rmarkdownflow.png)
 
 ### Example
 
-```{r include = FALSE}
+```{r}
+#| include = FALSE
 library(viridis)
 ```
 
@@ -51,7 +50,7 @@ image(volcano, col = viridis(200, option = "A"))
 
 ### Markdown Markup Language
 
-```
+```         
 Text formatting 
 ------------------------------------------------------------
 
@@ -101,3 +100,7 @@ First Header  | Second Header
 Content Cell  | Content Cell
 Content Cell  | Content Cell
 ```
+
+## Exercises
+
+1.  Practice what you’ve learned by creating a brief CV. The title should be your name, and you should include headings for (at least) education or employment. Each of the sections should include a bulleted list of jobs/degrees. Highlight the year in bold.

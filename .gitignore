@@ -45,4 +45,4 @@ vignettes/*.pdf
 *.html
 *.docx
 *.tex
-
+*_files/

@@ -1,0 +1,23 @@
+---
+title: "An example with typst"
+format: 
+  typst:
+    toc: true
+    section-numbering: 1.1.a
+    columns: 2
+    bibliography: references.bib
+    bibliographystyle: chicago-author-date
+    keep-typ: true
+editor: visual
+bibliography: references.bib
+---
+
+# Typst Document
+
+## What is Typst?
+
+Typst is a new document format that is designed to be easy to read and write. It is a plain text format that can be easily converted to other formats such as HTML, PDF, and DOCX.
+
+### This section is a subsection
+
+And here we have a citation @koentges2020.
